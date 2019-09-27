@@ -2,12 +2,13 @@
 import React from "react";
 import css from '../style/images.css';
 
+
 export default class Image extends React.Component {
     render(){
         return (
         <div>
             <a href={this.props.link}>
-                <img style={require('../images/radiantRaven.png')}/>
+                <img src={this.props.source}/>
             </a>
         </div>
         )

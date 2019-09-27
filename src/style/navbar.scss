@@ -1,12 +1,12 @@
 //@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto:100,400&display=swap');
 
-body {
-    font-size: 71.01%;
-}
 @font-face{
     font-family: 'HelveticaNeue_Light';
     src: url('./fonts/HelveticaNeueLight.woff2');
     font-weight: lighter;
+}
+body{
+    -webkit-font-smoothing: antialiased;
 }
 #nav{
     font-weight: 200;
@@ -14,19 +14,28 @@ body {
     width: 100%;
     text-align: center;
     justify-content: center;
-    background-color: white;
-    height:40px;
-    position: sticky;
-
+    background-color: transparent;
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: row;
+    max-height: 100vh;
+    z-index: 5;
+    
     div {
-        a{        
-            color: #000;
+        small{
+            font-size: 1rem;
+        }
+        small a{        
+            text-align: right;
+            color: rgba(0, 0, 0, 1);
             padding-bottom: 0.1em;
             font-family: 'HelveticaNeue_Light';
             border-bottom: none;
             text-decoration: none;
+            line-height: 1.4;
+            letter-spacing: 0.2em;
+            font-weight: 400;
         }
         img {
             width: 66.66%;
@@ -36,7 +45,7 @@ body {
     }
 }
 
-#nav li a:hover, img:hover {
+#nav a:hover, img:hover {
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }

@@ -37,11 +37,13 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
+    "imagemin": "^7.0.0",
     "node-sass": "^4.12.0"
   }
 }

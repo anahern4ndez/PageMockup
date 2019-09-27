@@ -41,7 +41,7 @@ module.exports = {
           'url-loader?limit=10000',
           'img-loader'
         ]
-      }
+      },
     ]
   },
   plugins: [

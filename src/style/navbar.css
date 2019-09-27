@@ -1,11 +1,11 @@
-body {
-  font-size: 71.01%;
-}
-
 @font-face {
   font-family: 'HelveticaNeue_Light';
   src: url("./fonts/HelveticaNeueLight.woff2");
   font-weight: lighter;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
 }
 
 #nav {
@@ -16,25 +16,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
-  height: 40px;
-  position: -webkit-sticky;
-  position: sticky;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  max-height: 100vh;
+  z-index: 5;
 }
 
-#nav div a {
-  color: #000;
+#nav div small {
+  font-size: 1rem;
+}
+
+#nav div small a {
+  text-align: right;
+  color: black;
   padding-bottom: 0.1em;
   font-family: 'HelveticaNeue_Light';
   border-bottom: none;
   text-decoration: none;
+  line-height: 1.4;
+  letter-spacing: 0.2em;
+  font-weight: 400;
 }
 
 #nav div img {
@@ -43,7 +53,7 @@ body {
   opacity: 1;
 }
 
-#nav li a:hover, img:hover {
+#nav a:hover, img:hover {
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
