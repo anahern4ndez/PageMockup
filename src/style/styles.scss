@@ -12,32 +12,39 @@ body {
     height:40px;
     position: sticky;
     font-family: 'Roboto';
+    position: sticky;
+    ul {
+        list-style-type: none;
+        width: 100%;
+        display:flex;
+        align-content: flex-start;
+        flex-direction: row;
+    }
+    li {
+        a{        
+            color: #000;
+            padding-bottom: 0.1em;
+            border-bottom: 0px solid rgba(0, 0, 0, 1);
+            text-decoration: none;
+        }
+        img {
+            width: 80%;
+            height: 80%;
+            opacity: 1;
+        }
+    }
 }
 
-#nav ul {
-    list-style-type: none;
-    width: 100%;
-    display:flex;
-    align-content: flex-start;
-    flex-direction: row;
-}
-
-#nav li a {
-    color: #000;
-	padding-bottom: 0.1em;
-	border-bottom: 0px solid rgba(0, 0, 0, 1);
-	text-decoration: none;
-}
-#nav li > img{
-    width: 1486px;
-    height: 250px;
-    opacity: 1;
-}
 #nav li a:hover, img:hover {
     color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+a{
+    img{
+        width: 50%;
+    }
 
+}
 a > img:hover {
     opacity: 1;
     -webkit-transform: perspective(1px) translateZ(0);

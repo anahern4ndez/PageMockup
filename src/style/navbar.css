@@ -1,0 +1,50 @@
+body {
+  font-size: 71.01%;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue_Light';
+  src: url("./fonts/HelveticaNeueLight.woff2");
+  font-weight: lighter;
+}
+
+#nav {
+  font-weight: 200;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  height: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#nav div a {
+  color: #000;
+  padding-bottom: 0.1em;
+  font-family: 'HelveticaNeue_Light';
+  border-bottom: none;
+  text-decoration: none;
+}
+
+#nav div img {
+  width: 66.66%;
+  height: 80%;
+  opacity: 1;
+}
+
+#nav li a:hover, img:hover {
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/*# sourceMappingURL=navbar.css.map */

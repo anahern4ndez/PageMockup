@@ -1,14 +1,14 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from './components/navbar';
-import Image from './components/images';
+import Navbar from './components/navbar.jsx';
+import Gallery from './components/gallery.jsx';
 
 const App = () => {
   return (
-    <div>
+    <div >
       <Navbar />
-      <Image />
+      <Gallery />
     </div>
   )
 };
