@@ -8,6 +8,7 @@
 body{
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
+    height: 100%;
 }
 .pad-2{
     padding: 2rem;
@@ -31,7 +32,7 @@ body{
     flex-direction: row;
     max-height: 100vh;
     max-width: 100%;
-    z-index: 5;
+    z-index: 20;
     font-weight: 400;
     
     div {

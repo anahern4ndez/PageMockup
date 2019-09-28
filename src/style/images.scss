@@ -1,16 +1,18 @@
 
-a{
-    img{
-        width: 50%;
-        opacity: 1;
-        transform: perspective(1px) translateZ(0);
+
+.img {
+    position: absolute;
+    padding: 1rem;
+    width: fit-content;
+    margin: 0.5rem;
+    a img{
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
         transition-property: transform;
     }
 
 }
-a > img[clickable="true"]:hover {
+.img a > img[clickable="true"]:hover {
     transform: rotate(4deg);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }

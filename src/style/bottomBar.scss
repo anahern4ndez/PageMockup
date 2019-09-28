@@ -3,13 +3,13 @@
     bottom: 0em;
     background-color: transparent;
     width: 100%;
+    z-index: 20;
     
     #text-box{
         text-align: right;
         position: absolute;
         bottom: 0;
         right: 0;
-        z-index: 10;
         width: 100%;
         font-family: 'HelveticaNeue_Light';
         margin-right: -1%;
@@ -27,7 +27,6 @@
     }
     #say-hi{
         position: absolute;
-        z-index: 11;
         bottom: 0;
     }
 }
