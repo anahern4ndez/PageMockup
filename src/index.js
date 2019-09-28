@@ -11,7 +11,7 @@ const App = () => {
     display:'flex'
   }
   return (
-    <div grid-row="" grid-pad="2" grid-gutter="4" grid-responsive="" >
+    <div>
       <Navbar />
       <Gallery />
       <BottomBar />

@@ -10,9 +10,23 @@ body {
           box-sizing: border-box;
 }
 
+.pad-2 {
+  padding: 2rem;
+}
+
+.grid-gutter {
+  margin: -2rem;
+}
+
+[grid-col="2"] {
+  width: 16.66667%;
+}
+
+[grid-col="8"] {
+  width: 66.66667%;
+}
+
 #nav {
-  font-weight: 200;
-  width: 100%;
   text-align: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -29,7 +43,13 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   max-height: 100vh;
+  max-width: 100%;
   z-index: 5;
+  font-weight: 400;
+}
+
+#nav div {
+  padding-top: 1.38rem;
 }
 
 #nav div small {
@@ -39,19 +59,18 @@ body {
 #nav div small a {
   text-align: right;
   color: black;
-  padding-bottom: 0.1em;
+  padding-top: 0.5em;
   font-family: 'HelveticaNeue_Light';
-  border-bottom: none;
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.6;
   letter-spacing: 0.2em;
-  font-weight: 400;
+  font-size: 0.71rem;
 }
 
-#nav div img {
-  width: 66.66%;
-  height: 80%;
-  opacity: 1;
+#nav div a img {
+  padding-top: 1.38rem;
+  width: 12rem;
+  height: auto;
 }
 
 /*#nav a:hover, img:hover {
