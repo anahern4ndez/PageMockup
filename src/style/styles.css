@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'HelveticaNeue_Light';
+  src: url("./fonts/HelveticaNeueLight.woff2");
+  font-weight: lighter;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
 .content_padding {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -7,5 +20,60 @@
 
 a:hover {
   color: #b5b5b5 !important;
+}
+
+[grid-col="2"] {
+  width: 16.66667%;
+}
+
+[grid-col="8"] {
+  width: 66.66667%;
+}
+
+[grid-col] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+[grid-pad="0.5"] {
+  padding: .25rem;
+}
+
+[grid-row="true"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+[grid-gutter="1"] {
+  margin: -0.5rem;
+}
+
+h1 {
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  margin-top: 1.25em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  display: block;
+  text-rendering: optimizeLegibility;
+}
+
+h2 a {
+  color: rgba(0, 0, 0, 0.85);
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
