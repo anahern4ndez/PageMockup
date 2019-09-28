@@ -8,7 +8,7 @@ export default class Image extends React.Component {
         return (
         <div>
             <a href={this.props.link}>
-                <img src={this.props.source}/>
+                <img src={this.props.source} clickable={this.props.clickable}/>
             </a>
         </div>
         )

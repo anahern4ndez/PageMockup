@@ -1,6 +1,6 @@
 
 a{
-    img{
+    img[clickable="true"]{
         width: 50%;
         opacity: 1;
         transform: perspective(1px) translateZ(0);

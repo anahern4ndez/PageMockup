@@ -1,2 +1,19 @@
-div {
+#bubble {
+    display: inline-flex;
+    vertical-align: middle;
+    top: 0rem;
+    a img{
+        margin-left: -6%;
+        margin-bottom: -13%;
+        transition-duration: 0.3s;
+        transition-property: transform;
+        animation-delay: 0.8s;
+        transform: perspective(1px) translateZ(0);
+        border: 0;
+        padding: 0;
+        width: 41%;
+    }
+}
+#bubble img:hover {
+    transform: translate(30%, -40%);
 }

@@ -7,13 +7,13 @@
 }
 body{
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
 }
 #nav{
     font-weight: 200;
-    margin-bottom: 10px;
     width: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: transparent;
     display: flex;
     position: sticky;
@@ -21,6 +21,7 @@ body{
     flex-direction: row;
     max-height: 100vh;
     z-index: 5;
+    
     
     div {
         small{
@@ -45,7 +46,6 @@ body{
     }
 }
 
-#nav a:hover, img:hover {
-    color: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
+/*#nav a:hover, img:hover {
+    color: rgba(181, 181, 181, 1) !important;
+}*/

@@ -1,4 +1,4 @@
-a img {
+a img[clickable="true"] {
   width: 50%;
   opacity: 1;
   -webkit-transform: perspective(1px) translateZ(0);

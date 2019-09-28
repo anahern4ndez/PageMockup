@@ -1,56 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap');
-
-body {
-    font-size: 71.01%;
+.content_padding{
+    padding-top: 4rem /*!main_margin*/;
+    padding-bottom: 4rem /*!main_margin*/;
+    padding-left: 4rem /*!main_margin*/;
+    padding-right: 4rem /*!main_margin*/;
 }
-#nav{
-    font-weight: 200;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-    background-color: white;
-    height:40px;
-    position: sticky;
-    font-family: 'Roboto';
-    position: sticky;
-    ul {
-        list-style-type: none;
-        width: 100%;
-        display:flex;
-        align-content: flex-start;
-        flex-direction: row;
-    }
-    li {
-        a{        
-            color: #000;
-            padding-bottom: 0.1em;
-            border-bottom: 0px solid rgba(0, 0, 0, 1);
-            text-decoration: none;
-        }
-        img {
-            width: 80%;
-            height: 80%;
-            opacity: 1;
-        }
-    }
-}
-
-#nav li a:hover, img:hover {
-    color: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-a{
-    img{
-        width: 50%;
-    }
-
-}
-a > img:hover {
-    opacity: 1;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+a:hover{
+    color: rgba(181, 181, 181, 1) !important;
 }

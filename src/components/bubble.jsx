@@ -5,8 +5,10 @@ import bubbleimg from "../images/bubble.png";
 
 function Bubble() {
     return(
-        <div>
-            <img src={bubbleimg}/>
+        <div id="bubble">
+            <a>
+                <img src={bubbleimg}/>
+            </a>
         </div>
     )
 }
