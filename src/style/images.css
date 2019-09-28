@@ -1,4 +1,4 @@
-a img[clickable="true"] {
+a img {
   width: 50%;
   opacity: 1;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -11,7 +11,7 @@ a img[clickable="true"] {
   transition-property: transform, -webkit-transform;
 }
 
-a > img:hover {
+a > img[clickable="true"]:hover {
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);

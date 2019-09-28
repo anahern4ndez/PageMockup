@@ -1,6 +1,6 @@
 
 a{
-    img[clickable="true"]{
+    img{
         width: 50%;
         opacity: 1;
         transform: perspective(1px) translateZ(0);
@@ -10,7 +10,7 @@ a{
     }
 
 }
-a > img:hover {
+a > img[clickable="true"]:hover {
     transform: rotate(4deg);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }

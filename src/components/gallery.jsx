@@ -1,6 +1,6 @@
 
 import React from "react";
-import css from '../style/gallery';
+import css from '../style/gallery.css';
 import Image from './images.jsx';
 
 import radiantRaven from "../images/radiantRaven.png";
@@ -20,7 +20,7 @@ export default class Gallery extends React.Component {
         <div id="gallery">
             <Image link="https://studiolinear.com/Radiant-Raven" source={radiantRaven} clickable="true"/>
             <Image link="https://studiolinear.com/Kabeah-Paris" source={kaveahParis} clickable="true"/>
-            <Image source={work} clickable="false"/>
+            <Image source={work}/>
             <Image link="https://studiolinear.com/North-Country" source={honeyCan} clickable="true"/>
             <Image link="https://studiolinear.com/Muffin-Studio" source={muffinStudio} clickable="true"/>
             <Image link="https://studiolinear.com/Brentwood-Resort" source={bwhotel} clickable="true"/>
