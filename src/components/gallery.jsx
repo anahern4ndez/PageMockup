@@ -31,7 +31,7 @@ function Gallery(props){
     const { number } = props;
     if(number === "1"){
         return (
-            <div className="gallery">
+            <div className="gallery" number={number}>
                 <Image link="https://studiolinear.com/Radiant-Raven" source={radiantRaven} clickable="true" metd={{w: 40, x: 2.8, y: 1.5, z:"1"}}/>
                 <Image link="https://studiolinear.com/Kabeah-Paris" source={kaveahParis} clickable="true" metd={{w: 37.5, x: 60.3, y: 19.8, z: "2"}}/>
                 <Image source={work} metd={{w: 27.5, x: -2.2, y: 74.6, z: "4"}}/>
@@ -45,15 +45,15 @@ function Gallery(props){
     }
     else if(number === "2"){
         return(
-            <div className="gallery">
+            <div className="gallery" number={number}>
                 <Image link="https://studiolinear.com/Kings-Mountain" source={clipboard} clickable="true" metd={{w: 32.5, x: 2.75, y: 6.5, z:"1"}}/>
                 <Image link="https://studiolinear.com/Wulf-Kitty" source={wulfkitty} clickable="true" metd={{w: 72.5, x: 42.75, y: 11.1, z: "2"}}/>
                 <Image link="https://studiolinear.com/Twinleaf" source={twinleaf} clickable="true" metd={{w: 27.5, x: 5.3, y: 79.5, z: "3"}}/>
                 <Image source={kingsMountain} metd={{w: 100, x: -2.2, y: 112.95, z: "4"}}/>
-                <Image source={collage} metd={{w: 60, x: 0.5, y: 220, z: "5"}}/>
-                <Image link="https://studiolinear.com/Garden-Remedies" source={remedies} clickable="true" metd={{w: 57.23, x: 40, y: 225.1, z: "7"}}/>
-                <Image link="https://studiolinear.com/Provender" source={phones} clickable="true" metd={{w: 90.2, x: 20.3, y: 400, z: "6"}}/>
-                <Image source={noova} metd={{w: 60.25, x: 20.3, y: 320, z: "6"}}/>
+                <Image source={collage} metd={{w: 60.73, x: -13.95, y: 239, z: "5"}}/>
+                <Image link="https://studiolinear.com/Garden-Remedies" source={remedies} clickable="true" metd={{w: 57.23, x: 47.99, y: 239.8, z: "7"}}/>
+                <Image link="https://studiolinear.com/Provender" source={phones} clickable="true" metd={{w: 90.2, x: 1.47, y: 314, z: "6"}}/>
+                <Image source={noova} metd={{w: 60.25, x: -5.2, y: 423.85, z: "6"}}/>
                 <Image link="https://studiolinear.com/Notes-Coffee-Co" source={coffees} clickable="true" metd={{w: 54.82, x: 90.25, y: 400, z: "8"}}/>
                 <Image link="https://studiolinear.com/Notes-Coffee-Co" source={bandit} clickable="true" metd={{w: 30.88, x: 90.25, y: 420, z: "9"}}/>
                 <Image link="https://open.spotify.com/playlist/5bRaJikAE9s87JunK2gFco?si=uHGlUeGySUu0MKhuqSt2JA" source={play} clickable="true" metd={{w: 9.88, x: 90.25, y: 1.5, z: "10"}}/>

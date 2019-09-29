@@ -1,6 +1,13 @@
 .gallery {
-  padding-bottom: 225%;
   position: relative;
   margin: 0px;
+}
+
+[number="1"] {
+  padding-bottom: 225%;
+}
+
+[number="2"] {
+  padding-bottom: 400%;
 }
 /*# sourceMappingURL=gallery.css.map */
