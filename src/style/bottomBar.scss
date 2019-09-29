@@ -3,7 +3,7 @@
     bottom: 0em;
     background-color: transparent;
     width: 100%;
-    z-index: 20;
+    z-index: 5;
     
     #text-box{
         text-align: right;
@@ -12,12 +12,13 @@
         right: 0;
         width: 100%;
         font-family: 'HelveticaNeue_Light';
-        margin-right: -1%;
-        letter-spacing: 0.5em;
+        margin-right: -0.78%;
+        letter-spacing: 0.45em;
+        z-index: 6;
         small{
-            font-size: 0.69rem;
+            font-size: 0.71rem;
             line-height: 1.4;
-            letter-spacing: 0.23em;
+            letter-spacing: 0.2em;
             font-weight: 400;
         }
         a{
@@ -26,6 +27,7 @@
         }
     }
     #say-hi{
+        z-index: 6;
         position: absolute;
         bottom: 0;
     }

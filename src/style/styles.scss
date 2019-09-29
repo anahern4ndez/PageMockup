@@ -3,6 +3,11 @@
     src: url('./fonts/HelveticaNeueLight.woff2');
     font-weight: lighter;
 }
+@font-face{
+    font-family: 'Space_Grotesk';
+    src: url('./fonts/SpaceGrotesk-Regular.woff2');
+    font-weight: lighter;
+}
 body{
     -webkit-font-smoothing: antialiased;
     box-sizing: border-box;
@@ -17,7 +22,9 @@ body{
 a:hover{
     color: rgba(181, 181, 181, 1) !important;
 }
-
+#services:hover{
+    color: rgba(0, 0, 0, 1) !important;
+}
 [grid-col="2"]{
     width: 16.66667%;
 }

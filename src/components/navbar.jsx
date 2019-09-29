@@ -12,7 +12,7 @@ export default class Navbar extends React.Component {
                 </small>
             </div>
             <div grid-col="8" className="pad-2" >
-                <a href="https://studiolinear.com/">
+                <a href="">
                     <img src="https://freight.cargo.site/w/1000/q/67/i/2301b15584f1c3162de88faeeebf527099a9daf57c7eb8baf9f7e783151a93bd/StudioLinearLogo.png"/>
                 </a>
             </div>

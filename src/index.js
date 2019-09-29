@@ -5,12 +5,10 @@ import Navbar from './components/navbar.jsx';
 import Gallery from './components/gallery.jsx';
 import BottomBar from './components/bottomBar.jsx';
 import Text from './components/text.jsx';
-import css from './style/styles.css'
+import css from './style/styles.css';
+import Newsletter from "./components/newsletter.jsx";
 
 const App = () => {
-  const bodyStyle = {
-    display:'flex'
-  }
   return (
     <div>
       <Navbar />
@@ -18,6 +16,7 @@ const App = () => {
       <BottomBar />
       <Text />
       <Gallery number="2"/>
+      <Newsletter />
     </div>
   )
 };

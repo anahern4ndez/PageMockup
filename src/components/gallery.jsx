@@ -53,13 +53,14 @@ function Gallery(props){
                 <Image source={collage} metd={{w: 60.73, x: -13.95, y: 239, z: "5"}}/>
                 <Image link="https://studiolinear.com/Garden-Remedies" source={remedies} clickable="true" metd={{w: 57.23, x: 47.99, y: 239.8, z: "7"}}/>
                 <Image link="https://studiolinear.com/Provender" source={phones} clickable="true" metd={{w: 90.2, x: 1.47, y: 314, z: "6"}}/>
-                <Image source={noova} metd={{w: 60.25, x: -5.2, y: 423.85, z: "6"}}/>
-                <Image link="https://studiolinear.com/Notes-Coffee-Co" source={coffees} clickable="true" metd={{w: 54.82, x: 90.25, y: 400, z: "8"}}/>
-                <Image link="https://studiolinear.com/Notes-Coffee-Co" source={bandit} clickable="true" metd={{w: 30.88, x: 90.25, y: 420, z: "9"}}/>
-                <Image link="https://open.spotify.com/playlist/5bRaJikAE9s87JunK2gFco?si=uHGlUeGySUu0MKhuqSt2JA" source={play} clickable="true" metd={{w: 9.88, x: 90.25, y: 1.5, z: "10"}}/>
-                <Image source={breakf} metd={{w: 47.18, x: 90.25, y: 1.5, z: "11"}}/>
+                <Image source={noova} metd={{w: 60.25, x: -5.1, y: 423.85, z: "6"}}/>
+                <Image link="https://studiolinear.com/Notes-Coffee-Co" source={coffees} clickable="true" metd={{w: 54.82, x: 43.86, y: 427.64, z: "8"}}/>
+                <Image link="https://www.banditedit.com/" source={bandit} clickable="true" metd={{w: 30.88, x: 5.6, y: 509.8, z: "9"}}/>
+                <Image link="https://open.spotify.com/playlist/5bRaJikAE9s87JunK2gFco?si=uHGlUeGySUu0MKhuqSt2JA" source={play} clickable="true" metd={{w: 9.881673675956947, x: 15.88, y: 552.6, z: "10"}}/>
+                <Image source={breakf} metd={{w: 47.18, x: 52.25, y: 515, z: "4"}}/>
             </div>
         )
     }
 }
 export default Gallery;
+
