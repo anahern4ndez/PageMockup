@@ -1,18 +1,32 @@
 
-
 .img {
     position: absolute;
     padding: 1rem;
     width: fit-content;
     margin: 0.5rem;
-    a img{
-        -webkit-transition-duration: 0.3s;
+    a div img{
+        transform: perspective(1px) translateZ(0);
         transition-duration: 0.3s;
-        transition-property: transform;
     }
 
 }
-.img a > img[clickable="true"]:hover {
+.img a > div > img[clickable="true"]:hover {
     transform: rotate(4deg);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
+.scroll-transition-fade{
+    height: 0px;
+    opacity: 0;
+    padding-bottom: initial;
+    transform: translate(0, 20px);
+    //transition-duration: 2s;
+    transition: transform 1.5s ease-in-out, opacity 1.3s ease-in-out;
+}
+.scroll-transition-fade.visible{
+    padding: 0;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+

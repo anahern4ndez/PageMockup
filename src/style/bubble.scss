@@ -1,3 +1,28 @@
+//animacion del inicio 
+@keyframes animationFrames{
+    0% {
+      transform:  translate(0px,0px)  ;
+    }
+    15% {
+      transform:  translate(25px,-25px)  ;
+    }
+    30% {
+      transform:  translate(0px,0px)  ;
+    }
+    45% {
+      transform:  translate(15px,-15px)  ;
+    }
+    60% {
+      transform:  translate(0px,0px)  ;
+    }
+    75% {
+      transform:  translate(5px,-5px)  ;
+    }
+    100% {
+      transform:  translate(0px,0px)  ;
+    }
+  }
+  
 #bubble {
     display: inline-flex;
     vertical-align: middle;
@@ -14,6 +39,10 @@
         padding: 0;
         width: 49.3%;
         z-index: 12;
+        //animacion de startup
+        animation: animationFrames linear 1s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
     }
 }
 #bubble img:hover {

@@ -1,5 +1,6 @@
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+var webpack = require("webpack");
 module.exports = {
   module: {
     rules: [
@@ -42,12 +43,31 @@ module.exports = {
           'img-loader'
         ]
       },
+      {
+        test: require.resolve('jquery'),
+        use: [{
+          loader: 'expose-loader',
+          options: 'jQuery'
+        },{
+          loader: 'expose-loader',
+          options: '$'
+        }]
+      },
+      {
+        test: /\.exec\.js$/,
+        use: [ 'script-loader' ]
+      }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
-      filename: "./index.html"
+      filename: "./index.html",
+      favicon: "./src/favicon.ico",
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
     })
   ]
 };

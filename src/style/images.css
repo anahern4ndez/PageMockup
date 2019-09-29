@@ -7,19 +7,36 @@
   margin: 0.5rem;
 }
 
-.img a img {
+.img a div img {
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
   -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+          transition-duration: 0.3s;
 }
 
-.img a > img[clickable="true"]:hover {
+.img a > div > img[clickable="true"]:hover {
   -webkit-transform: rotate(4deg);
           transform: rotate(4deg);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.scroll-transition-fade {
+  height: 0px;
+  opacity: 0;
+  padding-bottom: initial;
+  -webkit-transform: translate(0, 20px);
+          transform: translate(0, 20px);
+  -webkit-transition: opacity 1.3s ease-in-out, -webkit-transform 1.5s ease-in-out;
+  transition: opacity 1.3s ease-in-out, -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.3s ease-in-out;
+  transition: transform 1.5s ease-in-out, opacity 1.3s ease-in-out, -webkit-transform 1.5s ease-in-out;
+}
+
+.scroll-transition-fade.visible {
+  padding: 0;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=images.css.map */

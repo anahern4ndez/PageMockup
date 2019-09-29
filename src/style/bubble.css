@@ -1,3 +1,65 @@
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  15% {
+    -webkit-transform: translate(25px, -25px);
+            transform: translate(25px, -25px);
+  }
+  30% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  45% {
+    -webkit-transform: translate(15px, -15px);
+            transform: translate(15px, -15px);
+  }
+  60% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  75% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes animationFrames {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  15% {
+    -webkit-transform: translate(25px, -25px);
+            transform: translate(25px, -25px);
+  }
+  30% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  45% {
+    -webkit-transform: translate(15px, -15px);
+            transform: translate(15px, -15px);
+  }
+  60% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  75% {
+    -webkit-transform: translate(5px, -5px);
+            transform: translate(5px, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
 #bubble {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -24,6 +86,12 @@
   padding: 0;
   width: 49.3%;
   z-index: 12;
+  -webkit-animation: animationFrames linear 1s;
+          animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 #bubble img:hover {

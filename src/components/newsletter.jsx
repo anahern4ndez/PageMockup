@@ -8,7 +8,7 @@ function Newsletter(){
                 <small>JOIN OUR GROOVY NEWSLETTER</small>
                 <input type="email" id="email" placeholder=""></input>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <input type="submit" value="LET'S BOOGIE" id="mc-embedded-subscribe" class="button"></input>
+                <input type="submit" value="LET'S BOOGIE" id="mc-embedded-subscribe" className="button"></input>
             </div>
         </div>
     )

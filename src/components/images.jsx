@@ -13,17 +13,20 @@ function Image(props){
     let _y = "auto";
     const { w } = metd;
     const { z } = metd;
-    if (y === -1){
+    const { bp } = metd; //padding-bottom
+    /*if (y === -1){
         y = "auto"
         _y = 0
     }
     else{
         y += "vh"
-    }
+    }*/
     return (
-        <div className="img" style={{top: y, left: x + "vw", zIndex: z, height: "fit-content", bottom: _y}}>
+        <div className="img" style={{top: y + "vh", left: x + "vw", zIndex: z, bottom: _y, height: "fit-content"}}>
             <a href={link}>
-                <img src={source} clickable={clickable} style={{width: w + "vw"}}/>
+                <div className="scroll-transition-fade" style={{paddingBottom: bp, top: y + "%", left: x + "%", zIndex: z, width: w + "vw"}}>
+                    <img src={source} clickable={clickable} style={{width: w + "vw"}}/>
+                </div>
             </a>
         </div>
     )
