@@ -1,5 +1,6 @@
 
 import React from "react";
+import css from '../style/styles.css';
 
 function Text(props){
     return(
@@ -8,14 +9,14 @@ function Text(props){
                 <br />
                 <br />
                 <br />
-                <h1 style={{fontFamily: 'HelveticaNeue_Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif, \
+                <h1 style={{fontFamily: 'HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif, \
                     "Helvetica Neue Light", Icons', fontSize: "1.63rem", letterSpacing: "-0.01em", lineHeight: "1.3", fontWeight: "400"}}>
                     We are an award-winning, sister owned, women operated boutique creative agency based in the gorgeous 
                     state of Maine and the bustling metropolis of Minneapolis. We create brands, websites and lasting friendships built on 
                     creativity and a love for design.
                 </h1>
                 <h2>
-                    <a id="services" href="https://studiolinear.com/Services-1" rel="history" style={{fontFamily: 'HelveticaNeue_Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif, \
+                    <a id="services" href="https://studiolinear.com/Services-1" rel="history" style={{fontFamily: 'HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif, \
                     "Helvetica Neue Light", Icons', fontSize: "5.6rem", letterSpacing: "-0.01em", lineHeight: "1.4", fontWeight: "700"}}>Services &gt;</a>
                 </h2>
                 <br />

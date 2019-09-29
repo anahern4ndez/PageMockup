@@ -13,10 +13,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: transparent;
 }
 
 #news #info {
-  z-index: 6;
+  z-index: 12;
   display: block;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -77,7 +78,6 @@
 }
 
 input {
-  -webkit-writing-mode: horizontal-tb !important;
   text-rendering: auto;
   color: initial;
   letter-spacing: normal;

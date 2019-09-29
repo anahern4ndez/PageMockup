@@ -4,6 +4,7 @@
   display: inline-flex;
   vertical-align: middle;
   top: 0rem;
+  z-index: 12;
 }
 
 #bubble a img {
@@ -22,6 +23,7 @@
   border: 0;
   padding: 0;
   width: 49.3%;
+  z-index: 12;
 }
 
 #bubble img:hover {
