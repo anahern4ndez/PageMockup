@@ -2,7 +2,7 @@
 
 ## Description 
 
-This is a mockup (more of a clone, actually) of the web page [studiolinear.com](studiolinear.com). This project used ReactJS, webpack, babel, sass and multiple loaders (for css, images, scripts, files, etc) ans was created for de course Systems and Web Technologies. 
+This is a mockup (more of a clone, actually) of the web page [studiolinear.com](https://studiolinear.com/). This project used ReactJS, webpack, babel, sass and multiple loaders (for css, images, scripts, files, etc) ans was created for de course Systems and Web Technologies. 
 
 ## Usage 
 
