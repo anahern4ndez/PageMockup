@@ -6,8 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode production",
-    "lint": "eslint '**/*.jsx' && eslint '**/*.js' --ignore-pattern dist/ webpack.config.js",
-    "lint:fix": "eslint '**/*.jsx' && eslint '**/*.js' --fix"
+    "lint": "eslint '**/*.jsx' && eslint '**/*.js' --ignore-pattern dist/",
+    "lint:fix": "eslint '**/*.jsx' && eslint '**/*.js' --ignore-pattern dist/ --fix"
   },
   "repository": {
     "type": "git",

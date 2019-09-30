@@ -9,6 +9,8 @@ import "./style/styles.css";
 import Newsletter from "./components/newsletter.jsx";
 import scrollFade from "./js/animation.js";
 
+const $ = require("jquery");
+
 $(document).on("scroll", () => {
   scrollFade();
 });
