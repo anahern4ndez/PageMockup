@@ -1,33 +1,34 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Navbar from './components/navbar.jsx';
-import Gallery from './components/gallery.jsx';
-import BottomBar from './components/bottomBar.jsx';
-import Text from './components/text.jsx';
-import css from './style/styles.css';
+import Navbar from "./components/navbar.jsx";
+import Gallery from "./components/gallery.jsx";
+import BottomBar from "./components/bottomBar.jsx";
+import Text from "./components/text.jsx";
+import "./style/styles.css";
 import Newsletter from "./components/newsletter.jsx";
 import scrollFade from "./js/animation.js";
 
-$(document).on("scroll", function () {
-    scrollFade()
-})
+$(document).on("scroll", () => {
+  scrollFade();
+});
 
-class App extends React.Component{
-  componentDidMount(){
-    scrollFade()
+class App extends React.Component {
+  componentDidMount() {
+    scrollFade();
   }
-  render(){
+
+  render() {
     return (
       <div>
         <Navbar />
-        <Gallery number="1"/>
+        <Gallery number="1" />
         <BottomBar />
         <Text />
-        <Gallery number="2"/>
+        <Gallery number="2" />
         <Newsletter />
-      </div>  
-    )
+      </div>
+    );
   }
 }
 
