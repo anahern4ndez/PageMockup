@@ -1,5 +1,5 @@
 {
-  "name": "pagemockeup",
+  "name": "pagemockup",
   "version": "1.0.0",
   "description": "Proyecto 1. Sistemas y Tecnologías Web.",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/her17138/PageMockeup.git"
+    "url": "git+https://github.com/her17138/PageMockup.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/her17138/PageMockeup/issues"
+    "url": "https://github.com/her17138/PageMockup/issues"
   },
-  "homepage": "https://github.com/her17138/PageMockeup#readme",
+  "homepage": "https://github.com/her17138/PageMockup#readme",
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
