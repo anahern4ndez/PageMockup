@@ -22,5 +22,5 @@ Here is a more detailed description of the tools used:
 
 ### Authors
 
-**Ana Lucía Hernández** - [github.com/her17138](her17138).
+**Ana Lucía Hernández** - [her17138](github.com/her17138).
 
