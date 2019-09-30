@@ -1,17 +1,19 @@
-var $ = require('jquery');
+const $ = require('jquery');
 
-$(document).on("scroll", function () {
-  console.log("scrollin")
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  var imgs = document.querySelectorAll(".scroll-transition-fade")
-  for (var i = 0; i < imgs.length; i++) {
+const scrollFade = () => {
+    var pageTop = $(document).scrollTop()
+    var pageBottom = pageTop + $(window).height()
+    var imgs = $(".scroll-transition-fade")
+    for (var i = 0; i < imgs.length; i++) {
       var pic = imgs[i]
-      if ($(pic).position().top < pageBottom) { 
-          $(pic).addClass("visible")
+      const pos = $(pic).offset().top - pageBottom;
+      if (pos < 0) { 
+        $(pic).addClass("visible")
       }
       else {
-          $(tag).removeClass("visible")
+        $(pic).removeClass("visible")
       }
-  }
-})
+    }
+}
+
+export default scrollFade;

@@ -2,6 +2,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var webpack = require("webpack");
 module.exports = {
+  resolve: {extensions: ['.js','.jsx']},
   module: {
     rules: [
       {

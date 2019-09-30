@@ -7,39 +7,29 @@ import BottomBar from './components/bottomBar.jsx';
 import Text from './components/text.jsx';
 import css from './style/styles.css';
 import Newsletter from "./components/newsletter.jsx";
-
-const $ = require('jquery');
+import scrollFade from "./js/animation.js";
 
 $(document).on("scroll", function () {
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  console.log("wh "+ $(window).height())
-  var imgs = $(".scroll-transition-fade")
-  for (var i = 0; i < imgs.length; i++) {
-    var pic = imgs[i]
-    const pos = $(pic).offset().top - $(document).scrollTop()
-    if (pos < pageBottom) { 
-      //console.log("pos " + pos + " pb " + pageBottom)
-      $(pic).addClass("visible")
-    }
-    else {
-      $(pic).removeClass("visible")
-    }
-  }
+    scrollFade()
 })
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Gallery number="1"/>
-      <BottomBar />
-      <Text />
-      <Gallery number="2"/>
-      <Newsletter />
-    </div>
-  )
-};
+class App extends React.Component{
+  componentDidMount(){
+    scrollFade()
+  }
+  render(){
+    return (
+      <div>
+        <Navbar />
+        <Gallery number="1"/>
+        <BottomBar />
+        <Text />
+        <Gallery number="2"/>
+        <Newsletter />
+      </div>  
+    )
+  }
+}
 
 
 ReactDOM.render(<App />, document.querySelector("#root"));
