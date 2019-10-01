@@ -12,7 +12,7 @@ This is a mockup (more of a clone, actually) of the web page [studiolinear.com](
 2. Run `yarn` or `npm install` to install dependencies.<br />
 3. Run `npm start` to see the example app at `http://localhost:8080`.
 
-You can see a live copy of the website I made [here](msdeus.site).
+You can see a live copy of the website I made [here](http://msdeus.site/17138/proyecto1/dist/index.html).
 
 ### Commands
 
